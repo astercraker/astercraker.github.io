@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cv 2</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,300,600%7CRoboto+Slab:400,300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <div class="main">
+       
+        <div class="navigation">
+            <img src="images/profile-image.jpg" alt="profile image">
+            <ul>
+                <li>
+                    <a id="about" href="#about" class="active event-page"><i class="fas fa-user icon"></i>About me<span>ho am i</span></a>
+                </li>
+                <li>
+                    <a id="cv" href="#cv" class="event-page"><i class="fas fa-suitcase icon"></i>Resumen<span>Curriculum</span></a>
+                </li>
+                <li>
+                    <a id="works" href="#works" class="event-page"><i class="fas fa-camera icon"></i>Portafolio<span>Mi trabajo</span></a>
+                </li>
+                <li>
+                    <a id="contact" href="#contact" class="event-page"><i class="fas fa-phone icon"></i>Contacto<span>Contactame</span></a>
+                </li>
+            </ul>  
+        </div>
+        <div class="pages" id="page-about">
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="#face" ><i class="fab fa-facebook-square icon icon-social"></i></a>
+                    </li>
+                    <li>
+                        <a href="#linkedin" ><i class="fab fa-linkedin icon icon-social"></i></a>
+                    </li>
+                    <li>
+                        <a href="#youtube" ><i class="fab fa-youtube icon icon-social"></i></a>
+                    </li>
+                    <li>
+                        <a href="#phone" ><i class="fas fa-phone icon icon-social"></i></a>
+                    </li>
+                </ul>  
+            </div>
+            <div class="main-title profile">
+                <h1>Jose Domingo Trejo</h1>
+                <h3>Web Designer / Web Developer</h3>
+            </div>
+            <div class="title-page">
+                <h3>Acerca</h3>
+            </div>
+            <p class="lead-intro">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse ! “</p>
+            <div class="title-page">
+                <h3>Información Personal</h3>
+            </div>
+        </div>
+        <div class="pages" id="page-cv" style="display:none;" >
+                <div class="social">
+                    <ul>
+                        <li>
+                            <a href="#face" ><i class="fab fa-facebook-square icon icon-social"></i></a>
+                        </li>
+                        <li>
+                            <a href="#linkedin" ><i class="fab fa-linkedin icon icon-social"></i></a>
+                        </li>
+                        <li>
+                            <a href="#youtube" ><i class="fab fa-youtube icon icon-social"></i></a>
+                        </li>
+                        <li>
+                            <a href="#phone" ><i class="fas fa-phone icon icon-social"></i></a>
+                        </li>
+                    </ul>  
+                </div>
+                <div class="main-title profile">
+                    <h1 id="about">Jose Domingo Trejo</h1>
+                    <h3>Web Designer / Web Developer</h3>
+                </div>
+                <div class="title-page">
+                    <h3>Acerca</h3>
+                </div>
+                <p class="lead-intro">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse ! “</p>
+                <div class="title-page">
+                    <h3>Información Personal</h3>
+                </div>
+            </div>
+    </div>
+    <script>
+        var pages = document.getElementsByClassName("event-page");
+        var selectedPage = "";
+        var myFunction = function(evt) {
+            switch(selectedPage) {
+            case "about":
+                console.log("page about " + this.id);
+                break;
+            case "cv":
+                console.log("page cv " + this.id);
+                break;
+            default:
+                console.log("nothing page-" + this.id);
+                if(this.id != about){
+                    document.getElementById("page-" + this.id).style.display = "none";
+                }
+            }
+            selectedPage = this.id;
+            console.log(this.id);
+        };
+        for (var i = 0; i < pages.length; i++) {
+            pages[i].addEventListener('click', myFunction, false);
+        }
+    </script>
+</body>
+</html>
