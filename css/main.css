@@ -13,7 +13,7 @@ body{
     width: 80%;
     background: transparent;
 }
-.navigation,.pages{
+.navigation,.container-pages{
     display: inline-block;
     vertical-align: top;
 }
@@ -28,8 +28,11 @@ body{
 .navigation img{
     width: 150px;
 }
-.pages{
+.container-pages{
     width: 79.5%;
+    position: relative;
+}
+.pages{
     height: 100%;
     background: white;
     text-align: center;

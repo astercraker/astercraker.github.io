@@ -30,52 +30,37 @@
                 </li>
             </ul>  
         </div>
-        <div class="pages" id="page-about">
+        <div class="container-pages">
             <div class="social">
                 <ul>
                     <li>
-                        <a href="#face" ><i class="fab fa-facebook-square icon icon-social"></i></a>
+                        <a href="https://www.facebook.com/josedomingo.trejofernandez" target="_blank"><i class="fab fa-facebook-f icon icon-social"></i></a>
                     </li>
                     <li>
-                        <a href="#linkedin" ><i class="fab fa-linkedin icon icon-social"></i></a>
+                        <a href="https://www.linkedin.com/in/jos%C3%A9-domingo-trejo-fern%C3%A1ndez-35204072/" ><i class="fab fa-linkedin-in icon icon-social"></i></a>
                     </li>
                     <li>
-                        <a href="#youtube" ><i class="fab fa-youtube icon icon-social"></i></a>
+                        <a href="mailto: domingo.trejo@hotmail.com" ><i class="far fa-envelope icon icon-social"></i></a>
                     </li>
                     <li>
-                        <a href="#phone" ><i class="fas fa-phone icon icon-social"></i></a>
+                        <a href="tel:5217717724897" ><i class="fas fa-phone icon icon-social"></i></a>
                     </li>
                 </ul>  
             </div>
-            <div class="main-title profile">
-                <h1>Jose Domingo Trejo</h1>
-                <h3>Web Designer / Web Developer</h3>
-            </div>
-            <div class="title-page">
-                <h3>Acerca</h3>
-            </div>
-            <p class="lead-intro">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse ! “</p>
-            <div class="title-page">
-                <h3>Información Personal</h3>
-            </div>
-        </div>
-        <div class="pages" id="page-cv" style="display:none;" >
-                <div class="social">
-                    <ul>
-                        <li>
-                            <a href="#face" ><i class="fab fa-facebook-square icon icon-social"></i></a>
-                        </li>
-                        <li>
-                            <a href="#linkedin" ><i class="fab fa-linkedin icon icon-social"></i></a>
-                        </li>
-                        <li>
-                            <a href="#youtube" ><i class="fab fa-youtube icon icon-social"></i></a>
-                        </li>
-                        <li>
-                            <a href="#phone" ><i class="fas fa-phone icon icon-social"></i></a>
-                        </li>
-                    </ul>  
+            <div class="pages" id="page-about">
+                <div class="main-title profile">
+                    <h1>Jose Domingo Trejo</h1>
+                    <h3>Web Designer / Web Developer</h3>
                 </div>
+                <div class="title-page">
+                    <h3>Acerca</h3>
+                </div>
+                <p class="lead-intro">“ José Domingo Trejo, Soy un desarrollador apasionado con interés en desarrollo Web, node js, php y alguna que otras tecnologías interesantes.  “</p>
+                <div class="title-page">
+                    <h3>Información Personal</h3>
+                </div>
+            </div>
+            <div class="pages" id="page-cv" style="display:none;" >
                 <div class="main-title profile">
                     <h1 id="about">Jose Domingo Trejo</h1>
                     <h3>Web Designer / Web Developer</h3>
@@ -83,16 +68,17 @@
                 <div class="title-page">
                     <h3>Acerca</h3>
                 </div>
-                <p class="lead-intro">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse ! “</p>
+                <p class="lead-intro">“ Jose Domingo Trejo, Soy un desarrollador apasionado con interes en desarrollo web, node js, php y alguna que otras tecnolgias interesantes. “</p>
                 <div class="title-page">
                     <h3>Información Personal</h3>
                 </div>
             </div>
+        </div>
     </div>
     <script>
         var pages = document.getElementsByClassName("event-page");
         var selectedPage = "";
-        var myFunction = function(evt) {
+        var changePage = function(evt) {
             switch(selectedPage) {
             case "about":
                 console.log("page about " + this.id);
@@ -110,7 +96,7 @@
             console.log(this.id);
         };
         for (var i = 0; i < pages.length; i++) {
-            pages[i].addEventListener('click', myFunction, false);
+            pages[i].addEventListener('click', changePage, false);
         }
     </script>
 </body>
