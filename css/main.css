@@ -313,4 +313,10 @@ p.lead-intro {
     .main-title h1 {
         font-size: 26px;
     }
+    p.lead-intro {
+        padding: 0 5px;
+    }
+    .title-page {
+        margin-top: 25px;
+    }
 }
