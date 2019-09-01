@@ -1,79 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cv 2</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,300,600%7CRoboto+Slab:400,300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,300,600%7CRoboto+Slab:400,300,700"
+        rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    
+
     <div class="main">
-       
+
         <div class="navigation">
             <img src="images/profile-image.jpg" alt="profile image">
             <ul>
                 <li>
-                    <a id="about" href="#about" class="active event-page"><i class="fas fa-user icon"></i>Acerca de mi<span>Quién soy</span></a>
+                    <a id="about" href="#about" class="active event-page"><i class="fas fa-user icon"></i>Acerca de
+                        mi<span>Quién soy</span></a>
                 </li>
                 <li>
-                    <a id="cv" href="#cv" class="event-page"><i class="fas fa-suitcase icon"></i>Resumen<span>Curriculum</span></a>
+                    <a id="cv" href="#cv" class="event-page"><i
+                            class="fas fa-suitcase icon"></i>Resumen<span>Curriculum</span></a>
                 </li>
                 <li>
-                    <a id="works" href="#works" class="event-page"><i class="fas fa-camera icon"></i>Portafolio<span>Mi trabajo</span></a>
+                    <a id="works" href="#works" class="event-page"><i class="fas fa-camera icon"></i>Portafolio<span>Mi
+                            trabajo</span></a>
                 </li>
                 <li>
-                    <a id="contact" href="#contact" class="event-page"><i class="fas fa-phone icon"></i>Contacto<span>Contactame</span></a>
+                    <a id="contact" href="#contact" class="event-page"><i
+                            class="fas fa-phone icon"></i>Contacto<span>Contactame</span></a>
                 </li>
-            </ul>  
+            </ul>
         </div>
         <div class="container-pages">
             <div class="social">
                 <ul>
                     <li>
-                        <a href="https://github.com/astercraker" target="_blank"><i class="fab fa-github-alt icon icon-social"></i></a>
+                        <a href="https://github.com/astercraker" target="_blank"><i
+                                class="fab fa-github-alt icon icon-social"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/josedomingo.trejofernandez" target="_blank"><i class="fab fa-facebook-f icon icon-social"></i></a>
+                        <a href="https://www.facebook.com/josedomingo.trejofernandez" target="_blank"><i
+                                class="fab fa-facebook-f icon icon-social"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/jos%C3%A9-domingo-trejo-fern%C3%A1ndez-35204072/" ><i class="fab fa-linkedin-in icon icon-social"></i></a>
+                        <a href="https://www.linkedin.com/in/jos%C3%A9-domingo-trejo-fern%C3%A1ndez-35204072/"><i
+                                class="fab fa-linkedin-in icon icon-social"></i></a>
                     </li>
                     <li>
-                        <a href="mailto: domingo.trejo@hotmail.com" ><i class="far fa-envelope icon icon-social"></i></a>
+                        <a href="mailto: domingo.trejo@hotmail.com"><i class="far fa-envelope icon icon-social"></i></a>
                     </li>
                     <li>
-                        <a href="tel:5217717724897" ><i class="fas fa-phone icon icon-social"></i></a>
+                        <a href="tel:5217717724897"><i class="fas fa-phone icon icon-social"></i></a>
                     </li>
-                </ul>  
+                </ul>
             </div>
             <div class="pages" id="page-about">
-                <div class="main-title profile">
-                    <h1>Jose Domingo Trejo</h1>
-                    <h3>Web Designer / Web Developer</h3>
-                </div>
-                <div class="title-page">
-                    <h3>Acerca</h3>
-                </div>
-                <p class="lead-intro">“ José Domingo Trejo, Soy un desarrollador apasionado con interés en desarrollo Web, node js, php y alguna que otras tecnologías interesantes.  “</p>
-                <div class="title-page">
-                    <h3>Información Personal</h3>
+                <div class="pages-content">
+                    <div class="main-title profile">
+                        <h1>Jose Domingo Trejo</h1>
+                        <h3>Web Designer / Web Developer</h3>
+                    </div>
+                    <div class="title-page">
+                        <h3>Acerca</h3>
+                    </div>
+                    <p class="lead-intro">“ José Domingo Trejo, Soy un desarrollador apasionado con interés en
+                        desarrollo Web, node js, php y alguna que otras tecnologías interesantes. “</p>
+                    <div class="title-page">
+                        <h3>Información Personal</h3>
+                    </div>
                 </div>
             </div>
-            <div class="pages" id="page-cv" style="display:none;" >
-                <div class="main-title profile">
-                    <h1 id="about">Jose Domingo Trejo</h1>
-                    <h3>Web Designer / Web Developer</h3>
+            <div class="pages transition-down" id="page-cv">
+                <div class="pages-content">
+                    <div class="main-title profile">
+                        <h1>Region de CV</h1>
+                        <h3>Web Designer / Web Developer</h3>
+                    </div>
+                    <div class="title-page">
+                        <h3>Acerca</h3>
+                    </div>
+                    <p class="lead-intro">“ José Domingo Trejo, Soy un desarrollador apasionado con interés en
+                        desarrollo Web, node js, php y alguna que otras tecnologías interesantes. “</p>
+                    <div class="title-page">
+                        <h3>Información Personal</h3>
+                    </div>
                 </div>
-                <div class="title-page">
-                    <h3>Acerca</h3>
+            </div>
+            <div class="pages transition-down" id="page-works">
+                <div class="pages-content">
+                    <div class="main-title profile">
+                        <h1>Trabajos</h1>
+                        <h3>Web Designer / Web Developer</h3>
+                    </div>
+                    <div class="title-page">
+                        <h3>Acerca</h3>
+                    </div>
+                    <p class="lead-intro">“ José Domingo Trejo, Soy un desarrollador apasionado con interés en
+                        desarrollo Web, node js, php y alguna que otras tecnologías interesantes. “</p>
+                    <div class="title-page">
+                        <h3>Información Personal</h3>
+                    </div>
                 </div>
-                <p class="lead-intro">“ Jose Domingo Trejo, Soy un desarrollador apasionado con interes en desarrollo web, node js, php y alguna que otras tecnolgias interesantes. “</p>
-                <div class="title-page">
-                    <h3>Información Personal</h3>
+            </div>
+            <div class="pages transition-down" id="page-contact">
+                <div class="pages-content">
+                    <div class="main-title profile">
+                        <h1>Contacto</h1>
+                        <h3>Web Designer / Web Developer</h3>
+                    </div>
+                    <div class="title-page">
+                        <h3>Acerca</h3>
+                    </div>
+                    <p class="lead-intro">“ José Domingo Trejo, Soy un desarrollador apasionado con interés en
+                        desarrollo Web, node js, php y alguna que otras tecnologías interesantes. “</p>
+                    <div class="title-page">
+                        <h3>Información Personal</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -81,26 +130,24 @@
     <script>
         var pages = document.getElementsByClassName("event-page");
         var selectedPage = "";
-        var changePage = function(evt) {
-            switch(selectedPage) {
-            case "about":
-                console.log("page about " + this.id);
-                break;
-            case "cv":
-                console.log("page cv " + this.id);
-                break;
-            default:
-                console.log("nothing page-" + this.id);
-                if(this.id != about){
-                    document.getElementById("page-" + this.id).style.display = "none";
+        //Function for animation
+        var changePage = function (evt) {
+            if (selectedPage != "") {
+                document.getElementById("page-" + selectedPage).classList.add("transition-down");
+                document.getElementById("page-" + this.id).classList.remove("transition-down");
+            }
+            else {
+                if (this.id != "about") {
+                    document.getElementById("page-about").classList.add("transition-down");
+                    document.getElementById("page-" + this.id).classList.remove("transition-down");
                 }
             }
             selectedPage = this.id;
-            console.log(this.id);
         };
         for (var i = 0; i < pages.length; i++) {
             pages[i].addEventListener('click', changePage, false);
         }
     </script>
 </body>
+
 </html>
