@@ -20,19 +20,19 @@
         <div class="navigation">
             <img src="images/profile-image.jpg" alt="profile image">
             <ul>
-                <li>
-                    <a id="about" href="#about" class="active event-page"><i class="fas fa-user icon"></i>Acerca de
-                        mi<span>Quién soy</span></a>
+                <li style="outline:none;-webkit-tap-highlight-color: transparent;box-shadow: none;">
+                    <a id="about" href="#about" class="active event-page" style="outline:none;-webkit-tap-highlight-color: transparent;box-shadow: none;"><i class="fas fa-user icon" style="outline:none;-webkit-tap-highlight-color: transparent;box-shadow: none;"></i>Acerca de
+                        mi<span style="outline:none;">Quién soy</span></a>
                 </li>
-                <li>
-                    <a id="cv" href="#cv" class="event-page"><i
-                            class="fas fa-suitcase icon"></i>Resumen<span>Curriculum</span></a>
+                <li style="outline:none;-webkit-tap-highlight-color: transparent;box-shadow: none;">
+                    <a id="cv" href="#cv" class="event-page" style="outline:none;"><i
+                            class="fas fa-suitcase icon" style="outline:none;-webkit-tap-highlight-color: transparent;box-shadow: none;"></i>Resumen<span style="outline:none;-webkit-tap-highlight-color: transparent;box-shadow: none;">Curriculum</span></a>
                 </li>
-                <li>
+                <li style="-webkit-tap-highlight-color: transparent;">
                     <a id="works" href="#works" class="event-page"><i class="fas fa-camera icon"></i>Portafolio<span>Mi
                             trabajo</span></a>
                 </li>
-                <li>
+                <li style="-webkit-tap-highlight-color: transparent;">
                     <a id="contact" href="#contact" class="event-page"><i
                             class="fas fa-phone icon"></i>Contacto<span>Contactame</span></a>
                 </li>
@@ -133,15 +133,18 @@
         //Function for animation
         var changePage = function (evt) {
             if (selectedPage != "") {
+                document.getElementById(selectedPage).classList.remove("active");
                 document.getElementById("page-" + selectedPage).classList.add("transition-down");
                 document.getElementById("page-" + this.id).classList.remove("transition-down");
             }
             else {
                 if (this.id != "about") {
+                    document.getElementById("about").classList.remove("active");
                     document.getElementById("page-about").classList.add("transition-down");
                     document.getElementById("page-" + this.id).classList.remove("transition-down");
                 }
             }
+            this.classList.add("active");
             selectedPage = this.id;
             evt.preventDefault();
         };
